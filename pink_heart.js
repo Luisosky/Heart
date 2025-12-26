@@ -365,6 +365,19 @@ var ParticlePool = (function () {
 })();
 
 /*
+ * Play Button Handler
+ */
+(function () {
+  const playButton = document.getElementById("playButton");
+  const audioPlayer = document.getElementById("audioPlayer");
+  
+  playButton.addEventListener("click", () => {
+    audioPlayer.play();
+    playButton.classList.add("hidden");
+  });
+})();
+
+/*
  * Lyrics Display System
  */
 (function () {

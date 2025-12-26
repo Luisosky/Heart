@@ -7,6 +7,31 @@ body {
   overflow: hidden;
   font-family: 'Georgia', 'Times New Roman', serif;
 }
+
+/* Play Button */
+.play-button {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: #ff69b4;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 25px;
+  cursor: pointer;
+  z-index: 20;
+  box-shadow: 0 0 10px #ff1493;
+  transition: background 0.3s ease;
+}
+
+.play-button:hover {
+  background: #ff1493;
+}
+
+.play-button.hidden {
+  display: none;
+}
 canvas {
   position: absolute;
   width: 100%;
